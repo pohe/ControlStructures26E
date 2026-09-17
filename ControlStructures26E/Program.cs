@@ -1,4 +1,5 @@
 ﻿using ControlStructures26E;
+using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
 
@@ -61,31 +62,47 @@ Console.WriteLine("Hello, World!");
 //}
 
 
-//int number = 1;
-//while (number < 5)
+//int number = 1; //Intialisering
+//while (number < 5) //Condition - kører rundt sålænge den er true
 //{
 //    Console.WriteLine($"The value of the number is {number}");
-//    number = number + 2;
+//    number = number + 2; //Tæller der øndre betingelsen
 //}
 
-
-
-
-Console.WriteLine("Tallene fra 1 - 20");
-int i = 1; //Initalisere en tællevariable
-while( i <=20) //Condition def. stop betingelse
+for(int number = 1; number < 5; number = number + 2)
 {
-    Console.Write(i +  " ");
-    i++; //i = i+1;
+    Console.WriteLine($"The value of the number is {number}");
 }
+
+
+//Console.WriteLine("Tallene fra 1 - 20");
+//int i = 1; //Initalisere en tællevariable
+//while( i <=20) //Condition def. stop betingelse
+//{
+//    Console.Write(i +  " ");
+//    i++; //i = i+1;
+//}
+
+for(int i = 0; i<=20; i++)
+{
+    Console.WriteLine(i + " ");
+}
+
+
 Console.WriteLine();
 Console.WriteLine("Tallene fra 20 - 1");
-int j = 20; 
-while(1 <= j)
+//int j = 20; 
+//while(1 <= j)
+//{
+//    Console.Write(j + " ");
+//    j--;//j = j-1
+//}
+
+for( int j = 20 ; j >=1    ; j-- )
 {
     Console.Write(j + " ");
-    j--;//j = j-1
 }
+
 Console.WriteLine();
 Console.WriteLine("Alle de lige tal" +
     " fra 1 - 20");
